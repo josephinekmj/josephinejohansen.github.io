@@ -1,42 +1,151 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Min Portefølje</title>
-    <link rel="stylesheet" href="style.css">
+    <title>My Personal Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            background: linear-gradient(135deg, #f5e6e8 0%, #d4e5f7 100%);
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.7)), 
+                        url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&q=80');
+            background-size: cover;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: #8b4513;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: #6b8e23;
+            margin-bottom: 2rem;
+        }
+
+        .content-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.9);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            color: #9932cc;
+            margin-bottom: 1rem;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #20b2aa;
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255,255,255,0.8);
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255,255,255,0.8);
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            color: #ff69b4;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .social-links a:hover {
+            color: #da70d6;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Velkommen til min portefølje</h1>
-        <p>Jeg er en passioneret udvikler med fokus på webudvikling.</p>
-    </header>
-    
-    <section id="about">
-        <h2>Om Mig</h2>
-        <p>Jeg elsker at kode og bygge fede ting på internettet.</p>
-    </section>
-    
-    <section id="projects">
-        <h2>Mine Projekter</h2>
-        <div class="project">
-            <h3>Projekt 1</h3>
-            <p>Beskrivelse af projektet.</p>
+    <div class="container">
+        <header class="header">
+            <h1>Welcome to My World</h1>
+            <p class="subtitle">Embracing Life with Love and Spirituality</p>
+        </header>
+
+        <div class="content-section">
+            <div class="card">
+                <h2>About Me</h2>
+                <p>I am a woman who finds beauty in the simple things of life. My journey is guided by love, spirituality, and a deep connection with nature. Every day is an opportunity to spread positivity and embrace the divine feminine energy that surrounds us.</p>
+            </div>
+
+            <div class="card">
+                <h2>My Passions</h2>
+                <p>Life is a beautiful tapestry woven with various passions. From meditation and yoga to creative expression and nurturing relationships, I believe in living authentically and with purpose.</p>
+            </div>
+
+            <div class="card">
+                <h2>My Journey</h2>
+                <p>Every step of my path has been a lesson in growth and self-discovery. I embrace both the challenges and victories, knowing they shape who I am becoming.</p>
+            </div>
         </div>
-        <div class="project">
-            <h3>Projekt 2</h3>
-            <p>Beskrivelse af projektet.</p>
+
+        <div class="quote">
+            "In the midst of movement and chaos, keep stillness inside of you." - Deepak Chopra
         </div>
-    </section>
-    
-    <section id="contact">
-        <h2>Kontakt</h2>
-        <p>Email: dinemail@example.com</p>
-        <p>LinkedIn: <a href="#">Min LinkedIn</a></p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Min Portefølje</p>
-    </footer>
+
+        <div class="content-section">
+            <div class="card">
+                <h2>Nature's Wisdom</h2>
+                <p>Nature is my greatest teacher. Through its cycles and rhythms, I learn about patience, growth, and the interconnectedness of all things.</p>
+            </div>
+
+            <div class="card">
+                <h2>Spiritual Practice</h2>
+                <p>My spiritual journey is a daily practice of mindfulness, gratitude, and connection to the divine. It's about finding peace within and sharing it with others.</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Pinterest</a>
+                <a href="#">Blog</a>
+            </div>
+            <p>Let's connect and share our journeys together ✨</p>
+        </footer>
+    </div>
 </body>
 </html>
