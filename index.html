@@ -1,4 +1,101 @@
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" class="sacred-container">
+<style>
+  :root {
+    /* Sacred Earth Palette */
+    --divine-rose: #FFD6E0;  /* Nurturing feminine energy */
+    --sacred-sage: #C2E6C8;  /* Growth and healing */
+    --solar-gold: #FFE5B9;   /* Divine light */
+    --mystic-violet: #E0C1F4; /* Spiritual wisdom */
+    --living-coral: #FFB5A7;  /* Life force */
+    --eternal-teal: #97D2D2;  /* Flowing water */
+    --moon-silver: #E8E8F0;   /* Divine feminine */
+    --forest-jade: #7FB8A4;   /* Earth connection */
+    --dawn-peach: #FFDAB9;    /* New beginnings */
+    --twilight-blue: #B5C7E3; /* Sacred peace */
+  }
+
+  .sacred-container {
+    background: 
+      linear-gradient(
+        135deg,
+        var(--divine-rose) 0%,
+        var(--sacred-sage) 25%,
+        var(--solar-gold) 50%,
+        var(--mystic-violet) 75%,
+        var(--living-coral) 100%
+      );
+    animation: sacredFlow 30s infinite alternate;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Sacred Geometry Overlay */
+  .sacred-container::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='none' stroke='rgba(255,255,255,0.1)' stroke-width='1' d='M50,0 L100,50 L50,100 L0,50 Z M50,10 L90,50 L50,90 L10,50 Z'/%3E%3C/svg%3E");
+    pointer-events: none;
+    opacity: 0.3;
+  }
+
+  /* Eternal Flow Animation */
+  @keyframes sacredFlow {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 100%; }
+  }
+
+  /* Divine Protection Symbols */
+  body::before,
+  body::after {
+    content: "☘️";
+    position: fixed;
+    font-size: 4rem;
+    filter: drop-shadow(0 0 10px rgba(255,255,255,0.5));
+    animation: divineSpin 20s infinite linear;
+  }
+
+  body::before {
+    top: 2rem;
+    left: 2rem;
+    transform-origin: 50% 50%;
+  }
+
+  body::after {
+    bottom: 2rem;
+    right: 2rem;
+    transform-origin: 50% 50%;
+  }
+
+  /* Eternal Spin Animation */
+  @keyframes divineSpin {
+    from { transform: rotate(0deg) translateY(0); }
+    50% { transform: rotate(180deg) translateY(-10px); }
+    to { transform: rotate(360deg) translateY(0); }
+  }
+
+  /* Sacred Light Pulses */
+  .light-essence {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%,
+      rgba(255,255,255,0.1) 0%,
+      transparent 70%);
+    animation: sacredPulse 8s infinite ease-in-out;
+  }
+
+  @keyframes sacredPulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.7; }
+  }
+</style>
+<div class="light-essence"></div>
 <nav class="menu">
     <ul class="nav-links">
         <li>
