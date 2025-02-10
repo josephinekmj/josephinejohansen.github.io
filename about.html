@@ -1,257 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="sacred-realm">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me | A Journey of Growth</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+        
+        :root {
+            --divine-gold: #F9E79F;
+            --forest-emerald: #8BC34A;
+            --cosmic-lavender: #D1C4E9;
+            --sunrise-peach: #FFAB91;
+            --oceanic-teal: #26A69A;
+            --moonlight-silver: #ECEFF1;
+            --header-gradient: linear-gradient(120deg, #8E44AD, #D41D8C);
+        }
+
         body {
             margin: 0;
-            font-family: 'Cormorant Garamond', serif;
-            background: linear-gradient(135deg, #fdf1f5 0%, #f3e6f5 100%);
-            color: #4a4a4a;
-            line-height: 1.8;
+            font-family: 'Orbitron', sans-serif;
+            background: radial-gradient(circle at 50% 50%, var(--divine-gold) 5%, var(--forest-emerald) 45%, var(--oceanic-teal) 90%);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .sacred-header {
+            text-align: center;
+            padding: 1rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--moonlight-silver);
+            background: var(--header-gradient);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            margin: 1rem;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            margin: 1rem auto;
+            max-width: 90%;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: var(--oceanic-teal);
+            font-weight: 600;
+            padding: 0.8rem 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav a:hover {
+            color: var(--cosmic-lavender);
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 3rem;
-        }
-
-        .header {
-            text-align: center;
-            padding: 5rem 0;
-            background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.6)), 
-                        url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&q=80');
-            background-size: cover;
-            border-radius: 20px;
-            margin-bottom: 3rem;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-        }
-
-        h1 {
-            font-size: 3.8rem;
-            color: #9b6b9d;
-            margin-bottom: 1.5rem;
-            font-weight: 600;
-        }
-
-        .vision-statement {
-            font-size: 1.6rem;
-            color: #7d5d7e;
-            margin-bottom: 2rem;
-            font-style: italic;
+            padding: 2rem;
         }
 
         .content-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 3rem;
-            margin-bottom: 4rem;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
         }
 
-        .content-section {
-            background: rgba(255,255,255,0.9);
-            padding: 2.5rem;
+        @media (min-width: 768px) {
+            .content-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .sacred-card {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(15px);
+            padding: 2rem;
             border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
             transition: transform 0.3s ease;
         }
 
-        .content-section:hover {
-            transform: translateY(-5px);
-        }
-
-        .content-section h2 {
-            color: #c17ecc;
-            margin-bottom: 1.5rem;
-            font-size: 2rem;
-        }
-
-        .quote-section {
-            text-align: center;
-            padding: 3rem;
-            background: rgba(255,255,255,0.8);
-            border-radius: 15px;
-            margin: 3rem 0;
+        .sacred-card:hover {
+            transform: scale(1.03);
         }
 
         .quote {
-            font-size: 1.8rem;
-            color: #b76e79;
+            font-size: 1.4rem;
             font-style: italic;
-            line-height: 1.6;
-        }
-
-        .skills-section {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin: 2rem 0;
-        }
-
-        .skill-tag {
-            background: rgba(193,126,204,0.1);
-            padding: 0.5rem 1.5rem;
-            border-radius: 20px;
-            color: #9b6b9d;
-            font-size: 0.9rem;
-        }
-
-        .footer {
+            color: var(--oceanic-teal);
             text-align: center;
-            padding: 3rem;
-            background: rgba(255,255,255,0.8);
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background: rgba(255,255,255,0.3);
+            border-radius: 10px;
+            max-width: 800px;
+        }
+
+        .sacred-footer {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255,255,255,0.2);
             border-radius: 15px;
-            margin-top: 3rem;
-        }
-
-        .connect-links a {
-            color: #c17ecc;
-            margin: 0 1rem;
-            text-decoration: none;
-            font-size: 1.2rem;
-            transition: color 0.3s ease;
-        }
-
-        .connect-links a:hover {
-            color: #9b6b9d;
+            margin-top: 2rem;
         }
     </style>
 </head>
 <body>
-   <nav class="menu">
-    <ul class="nav-links">
-        <li>
-            <a href="index.html" class="nav-item">
-                <span class="icon">🏠</span>
-                <span class="text">Home</span>
-            </a>
-        </li>
-        <li>
-            <a href="about.html" class="nav-item">
-                <span class="icon">✨</span>
-                <span class="text">About</span>
-            </a>
-        </li>
-        <li>
-            <a href="portfolio.html" class="nav-item">
-                <span class="icon">🌱</span>
-                <span class="text">Portfolio</span>
-            </a>
-        </li>
-        <li>
-            <a href="contact.html" class="nav-item">
-                <span class="icon">💫</span>
-                <span class="text">Contact</span>
-            </a>
-        </li>
-    </ul>
-    <style>
-        .nav-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            list-style: none;
-            padding: 1rem;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 2rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        .nav-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-decoration: none;
-            color: #2c5364;
-            font-family: 'Quicksand', sans-serif;
-            transition: transform 0.3s ease, color 0.3s ease;
-            padding: 0.5rem 1rem;
-        }
+    <div class="sacred-header">Conscious Collaboration. Divine Digitality. Innovate with Intention</div>
 
-        .nav-item:hover {
-            transform: translateY(-5px);
-            color: #4ca1af;
-        }
+    <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+    </nav>
 
-        .icon {
-            font-size: 1.5rem;
-            margin-bottom: 0.3rem;
-            animation: float 3s ease-in-out infinite;
-        }
-
-        .text {
-            font-size: 0.9rem;
-            font-weight: 500;
-            letter-spacing: 1px;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-5px); }
-        }
-    </style>
-</nav>
-    
     <div class="container">
-        <header class="header">
-            <h1>Embracing Growth & Grace</h1>
-            <p class="vision-statement">Weaving together personal leadership, spirituality, and continuous evolution</p>
-        </header>
-
         <div class="content-grid">
-            <div class="content-section">
+            <div class="sacred-card">
                 <h2>My Journey</h2>
-                <p>As my own leader and eternal student of life, I embrace each day as an opportunity for growth and transformation. My approach combines professional expertise with feminine wisdom, creating a unique perspective that values both strength and sensitivity.</p>
-                <div class="skills-section">
-                    <span class="skill-tag">Leadership</span>
-                    <span class="skill-tag">Strategic Thinking</span>
-                    <span class="skill-tag">Emotional Intelligence</span>
-                    <span class="skill-tag">Innovation</span>
-                      <span class="skill-tag">Open-minded</span>
-                     <span class="skill-tag">Analytical</span>
-                </div>
+                <p>Embracing each day as an opportunity for growth and transformation, combining professional expertise with feminine wisdom.</p>
             </div>
-
-            <div class="content-section">
+            <div class="sacred-card">
                 <h2>Philosophy & Approach</h2>
-                <p>I believe in leading with both heart and mind, understanding that true strength lies in embracing our whole selves. My leadership style is rooted in authenticity, empathy, and the courage to face challenges as opportunities for growth.</p>
-                <div class="skills-section">
-                    <span class="skill-tag">Mindful Leadership</span>
-                    <span class="skill-tag">Intuitive Decision Making</span>
-                    <span class="skill-tag">Collaborative Growth</span>
-                      <span class="skill-tag"></span>
-                </div>
+                <p>Leading with both heart and mind, rooted in authenticity, empathy, and courage.</p>
             </div>
         </div>
 
-        <div class="quote-section">
-            <p class="quote">"In the dance between divine feminine wisdom and professional excellence, I find my true power."</p>
-        </div>
+        <div class="quote">“In the dance between divine feminine wisdom and professional excellence, I find my true power.”</div>
 
         <div class="content-grid">
-            <div class="content-section">
+            <div class="sacred-card">
                 <h2>Professional Evolution</h2>
-                <p>Each challenge in my career path has been a sacred teacher, helping me develop resilience and wisdom. I approach leadership with a blend of strategic thinking and intuitive understanding, always staying open to new perspectives and growth opportunities.</p>
+                <p>Developing resilience and wisdom, blending strategic thinking with intuition.</p>
             </div>
-
-            <div class="content-section">
+            <div class="sacred-card">
                 <h2>Values & Vision</h2>
-                <p>My work is guided by the principles of authenticity, continuous learning, and conscious leadership. I believe in creating environments where both professional excellence and personal growth can flourish harmoniously.</p>
+                <p>Fostering authenticity, continuous learning, and conscious leadership.</p>
             </div>
         </div>
+    </div>
 
-        <footer class="footer">
-            <div class="connect-links">
-                <a href="#">LinkedIn</a>
-                <a href="#">Professional Blog</a>
-                <a href="#">Speaking Engagements</a>
-            </div>
-            <p>Let's connect and explore the possibilities of growth together 🌸</p>
-        </footer>
+    <div class="sacred-footer">
+        <p>Let’s connect and explore the possibilities of growth together ✨</p>
+        <p><a href="#">LinkedIn</a> | <a href="#">Professional Blog</a> | <a href="#">Speaking Engagements</a></p>
     </div>
 </body>
 </html>
