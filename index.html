@@ -1,26 +1,83 @@
 <!DOCTYPE html>
 <nav class="menu">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
+    <ul class="nav-links">
+        <li>
+            <a href="index.html" class="nav-item">
+                <span class="icon">🏠</span>
+                <span class="text">Home</span>
+            </a>
+        </li>
+        <li>
+            <a href="about.html" class="nav-item">
+                <span class="icon">✨</span>
+                <span class="text">About</span>
+            </a>
+        </li>
+        <li>
+            <a href="portfolio.html" class="nav-item">
+                <span class="icon">🌱</span>
+                <span class="text">Portfolio</span>
+            </a>
+        </li>
+        <li>
+            <a href="contact.html" class="nav-item">
+                <span class="icon">💫</span>
+                <span class="text">Contact</span>
+            </a>
+        </li>
     </ul>
+    <style>
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: #2c5364;
+            font-family: 'Quicksand', sans-serif;
+            transition: transform 0.3s ease, color 0.3s ease;
+            padding: 0.5rem 1rem;
+        }
+
+        .nav-item:hover {
+            transform: translateY(-5px);
+            color: #4ca1af;
+        }
+
+        .icon {
+            font-size: 1.5rem;
+            margin-bottom: 0.3rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .text {
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+    </style>
 </nav>
 <html lang="en">
 <head>
-
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Page</title>
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <style>
         body {
             margin: 0;
@@ -157,9 +214,9 @@
 
         <footer class="footer">
             <div class="social-links">
-                <a href="https://www.instagram.com/josephinekmj" target="_blank">Instagram</a>
-                <a href="https://www.chatgpt.com" target="_blank">ChatGPT <3</a>
-                <a href="dailyaffirmations.html" target="_blank">Daily Affirmations</a>
+                <a href="#">Instagram</a>
+                <a href="#">Pinterest</a>
+                <a href="#">Blog</a>
             </div>
             <p>Let's connect and share our journeys together ✨</p>
         </footer>
