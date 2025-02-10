@@ -1,45 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="sacred-realm">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sacred Technology Portfolio</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+        
+        :root {
+            --divine-gold: #F9E79F;
+            --forest-emerald: #8BC34A;
+            --cosmic-lavender: #D1C4E9;
+            --sunrise-peach: #FFAB91;
+            --oceanic-teal: #26A69A;
+            --moonlight-silver: #ECEFF1;
+            --header-gradient: linear-gradient(120deg, #8E44AD, #D41D8C);
+        }
+
         body {
             margin: 0;
-            font-family: 'Playfair Display', serif;
-            background: linear-gradient(135deg, #f5e6e8 0%, #d4e5f7 100%);
-            color: #4a4a4a;
-            line-height: 1.6;
-            background-image: url('https://images.unsplash.com/photo-1465146633011-14f8e0781093?auto=format&fit=crop&q=80'), 
-                            linear-gradient(135deg, #f5e6e8 0%, #d4e5f7 100%);
-            background-blend-mode: soft-light;
-            background-attachment: fixed;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        .header {
+            font-family: 'Orbitron', sans-serif;
+            background: radial-gradient(circle at 50% 50%, var(--divine-gold) 5%, var(--forest-emerald) 45%, var(--oceanic-teal) 90%);
+            color: #333;
+            overflow-x: hidden;
             text-align: center;
-            padding: 4rem 0;
-            background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.7));
-            border-radius: 15px;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            background-image: url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&q=80');
-            background-size: cover;
-            background-blend-mode: overlay;
         }
 
-        .sacred-title {
-            font-size: 3rem;
-            color: #8b4513;
-            margin-bottom: 1rem;
-            font-family: 'Playfair Display', serif;
+        .sacred-header {
+            text-align: center;
+            padding: 1.5rem 0;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--moonlight-silver);
+            background: var(--header-gradient);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            border-radius: 10px;
+            margin: 1rem auto;
+            max-width: 600px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: var(--oceanic-teal);
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav a:hover {
+            color: var(--cosmic-lavender);
+        }
+
+     .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 2.5rem;
         }
 
         .portfolio-grid {
@@ -50,295 +74,57 @@
         }
 
         .portfolio-item {
-            background: rgba(255,255,255,0.9);
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-            border: 1px solid #f0e6ff;
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(14px);
+            border-radius: 18px;
+            padding: 2.5rem;
+            transition: transform 0.3s ease;
         }
 
         .portfolio-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-        }
-
-        .portfolio-content {
-            padding: 1.5rem;
-        }
-
-        .portfolio-content h3 {
-            color: #6b8e23;
-            margin-bottom: 1rem;
-        }
-
-        .sacred-skills {
-            background: rgba(255,255,255,0.95);
-            padding: 2rem;
-            border-radius: 15px;
-            margin: 3rem 0;
-            background-image: url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&q=80');
-            background-size: cover;
-            background-blend-mode: overlay;
-        }
-
-        .skill-category {
-            display: flex;
-            align-items: center;
-            margin-bottom: 2rem;
-        }
-
-        .skill-icon {
-            font-size: 2rem;
-            margin-right: 1rem;
-        }
-
-        .skill-bars {
-            flex-grow: 1;
-        }
-
-        .skill-bar {
-            height: 10px;
-            background: #f0e6ff;
-            border-radius: 5px;
-            margin: 1rem 0;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .skill-progress {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            background: linear-gradient(90deg, #6b8e23, #8b4513);
-            border-radius: 5px;
-            animation: fillProgress 1.5s ease-out forwards;
-        }
-
-        .meditation-quote {
-            font-style: italic;
-            text-align: center;
-            padding: 2rem;
-            color: #6b8e23;
-            font-size: 1.2rem;
-            margin: 2rem 0;
-        }
-
-        .nature-elements {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: -1;
-        }
-
-        .nature-element {
-            position: absolute;
-            opacity: 0.1;
-            animation: float 20s infinite linear;
-        }
-
-        @keyframes float {
-            0% { transform: translateY(0) rotate(0deg); }
-            100% { transform: translateY(-100vh) rotate(360deg); }
+            transform: scale(1.07);
         }
 
         .sacred-footer {
             text-align: center;
-            padding: 2rem;
-            background: rgba(255,255,255,0.8);
-            border-radius: 10px;
-            margin-top: 2rem;
-        }
-
-        .sacred-links a {
-            color: #6b8e23;
-            margin: 0 1rem;
-            text-decoration: none;
-            font-size: 1.2rem;
-            transition: all 0.3s ease;
-        }
-
-        .sacred-links a:hover {
-            color: #8b4513;
+            padding: 2.5rem;
+            background: rgba(255,255,255,0.25);
+            border-radius: 18px;
+            margin-top: 2.5rem;
         }
     </style>
 </head>
 <body>
-   <nav class="menu">
-    <ul class="nav-links">
-        <li>
-            <a href="index.html" class="nav-item">
-                <span class="icon">🏠</span>
-                <span class="text">Home</span>
-            </a>
-        </li>
-        <li>
-            <a href="about.html" class="nav-item">
-                <span class="icon">✨</span>
-                <span class="text">About</span>
-            </a>
-        </li>
-        <li>
-            <a href="portfolio.html" class="nav-item">
-                <span class="icon">🌱</span>
-                <span class="text">Portfolio</span>
-            </a>
-        </li>
-        <li>
-            <a href="contact.html" class="nav-item">
-                <span class="icon">💫</span>
-                <span class="text">Contact</span>
-            </a>
-        </li>
-    </ul>
-    <style>
-        .nav-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            list-style: none;
-            padding: 1rem;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 2rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        .nav-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-decoration: none;
-            color: #2c5364;
-            font-family: 'Quicksand', sans-serif;
-            transition: transform 0.3s ease, color 0.3s ease;
-            padding: 0.5rem 1rem;
-        }
-
-        .nav-item:hover {
-            transform: translateY(-5px);
-            color: #4ca1af;
-        }
-
-        .icon {
-            font-size: 1.5rem;
-            margin-bottom: 0.3rem;
-            animation: float 3s ease-in-out infinite;
-        }
-
-        .text {
-            font-size: 0.9rem;
-            font-weight: 500;
-            letter-spacing: 1px;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-5px); }
-        }
-    </style>
-</nav>
-    <div class="nature-elements">
-        <div class="nature-element" style="left: 10%; top: 20%;">🌿</div>
-        <div class="nature-element" style="left: 70%; top: 50%;">🌸</div>
-        <div class="nature-element" style="left: 40%; top: 80%;">🍃</div>
-    </div>
-
+    <div class="sacred-header">Sacred Technology Portfolio</div>
+    <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+    </nav>
     <div class="container">
-        <header class="header">
-            <h1 class="sacred-title">Sacred Technology Journey</h1>
-            <p>Bridging the Divine Feminine with Digital Innovation</p>
-        </header>
-
-        <div class="meditation-quote">
-            "Technology is the modern meditation - a space where creativity flows and innovation meets inner peace"
-        </div>
-
-        <section class="sacred-skills">
-            <h2>Divine Technical Wisdom</h2>
-            
-            <div class="skill-category">
-                <div class="skill-icon">🌺</div>
-                <div class="skill-bars">
-                    <h3>Mindful Frontend Development</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <div class="skill-icon">🌿</div>
-                <div class="skill-bars">
-                    <h3>Holistic Backend Solutions</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 85%"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <div class="skill-icon">🌸</div>
-                <div class="skill-bars">
-                    <h3>Intuitive UI/UX Design</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 88%"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <h2 class="projects-header" style="text-align: center; color: #9932cc; margin: 2rem 0;">Ideas for Projects</h2>
-
+        <h2>Ideas for Projects</h2>
         <div class="portfolio-grid">
             <div class="portfolio-item">
-                <div class="portfolio-content">
-                    <h3>Meditation Timer App</h3>
-                    <p>A mindful approach to time management, built with React Native</p>
-                    <p>Incorporating sacred geometry and calming animations</p>
-                </div>
+                <h3>Meditation Timer App</h3>
+                <p>A mindful approach to time management</p>
             </div>
-
             <div class="portfolio-item">
-                <div class="portfolio-content">
-                    <h3>Spiritual Journal Platform</h3>
-                    <p>Digital sacred space for personal reflection</p>
-                    <p>Built with Next.js and MongoDB</p>
-                </div>
+                <h3>Spiritual Journal Platform</h3>
+                <p>Digital sacred space for personal reflection</p>
             </div>
-
             <div class="portfolio-item">
-                <div class="portfolio-content">
-                    <h3>Nature Connection API</h3>
-                    <p>RESTful API connecting users with local nature spots</p>
-                    <p>Built with Node.js and Express</p>
-                </div>
+                <h3>Nature Connection API</h3>
+                <p>Connecting users with local nature spots</p>
             </div>
-
             <div class="portfolio-item">
-                <div class="portfolio-content">
-                    <h3>Divine Feminine Dashboard</h3>
-                    <p>Moon phase tracking and feminine energy monitoring</p>
-                    <p>Built with Vue.js and D3.js</p>
-                </div>
+                <h3>Divine Feminine Dashboard</h3>
+                <p>Moon phase tracking and feminine energy monitoring</p>
             </div>
         </div>
-
-        <div class="meditation-quote">
-            "In the space between code and consciousness, we find our true creative power"
-        </div>
-
-        <footer class="sacred-footer">
-            <div class="sacred-links">
-                <a href="#">Sacred GitHub Space</a>
-                <a href="#">LinkedIn Journey</a>
-                <a href="devinfo.html">How I Built this website</a>
-            </div>
-            <p>Creating conscious technology with divine purpose 🌸</p>
-        </footer>
+    </div>
+    <div class="sacred-footer">
+        <p>Creating conscious technology with divine purpose 🌸</p>
     </div>
 </body>
 </html>
-
-
