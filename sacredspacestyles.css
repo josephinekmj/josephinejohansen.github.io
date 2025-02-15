@@ -10,14 +10,14 @@
     --header-gradient: linear-gradient(120deg, #8E44AD, #D41D8C);
 }
 
-body {
-    margin: 0;
-    font-family: 'Quicksand', sans-serif;
-    background: radial-gradient(circle at 50% 50%, var(--divine-gold) 5%, var(--forest-emerald) 45%, var(--oceanic-teal) 90%);
-    color: #333;
-    overflow-x: hidden;
-    text-align: center;
-}
+    body {
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            background: radial-gradient(circle at 50% 50%, var(--divine-gold) 5%, var(--forest-emerald) 45%, var(--oceanic-teal) 90%);
+            color: #333;
+            overflow-x: hidden;
+        }
+
 
 .sacred-header {
     text-align: center;
