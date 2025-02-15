@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Quicksand:wght@300;400&display=swap');
+
 :root {
     --divine-gold: #F9E79F;
     --forest-emerald: #8BC34A;
@@ -10,10 +12,11 @@
 
 body {
     margin: 0;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     background: radial-gradient(circle at 50% 50%, var(--divine-gold) 5%, var(--forest-emerald) 45%, var(--oceanic-teal) 90%);
     color: #333;
     overflow-x: hidden;
+    text-align: center;
 }
 
 .sacred-header {
@@ -25,6 +28,7 @@ body {
     background: var(--header-gradient);
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    margin: 1rem;
 }
 
 .nav {
@@ -50,6 +54,17 @@ body {
     color: var(--cosmic-lavender);
 }
 
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
 .sacred-content {
     display: flex;
     flex-wrap: wrap;
@@ -71,4 +86,23 @@ body {
 
 .sacred-card:hover {
     transform: scale(1.05);
+}
+
+.quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--oceanic-teal);
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+}
+
+.sacred-footer {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255,255,255,0.2);
+    border-radius: 15px;
+    margin-top: 2rem;
 }
