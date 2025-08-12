@@ -1,134 +1,335 @@
 <!DOCTYPE html>
-<html lang="en" class="sacred-realm">
+<html lang="da" class="sacred-realm">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sacred Technology Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4. semester – Journey Portefølje (Wireframe Skeleton)</title>
+    <link rel="stylesheet" href="sacredspacestyles.css" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-        
-        :root {
-            --divine-gold: #F9E79F;
-            --forest-emerald: #8BC34A;
-            --cosmic-lavender: #D1C4E9;
-            --sunrise-peach: #FFAB91;
-            --oceanic-teal: #26A69A;
-            --moonlight-silver: #ECEFF1;
-            --header-gradient: linear-gradient(120deg, #8E44AD, #D41D8C);
+        /* --- Layout helpers --- */
+        .container {
+            max-width: 1100px;
         }
 
-        body {
-            margin: 0;
-            font-family: 'Orbitron', sans-serif;
-            background: radial-gradient(circle at 50% 50%, var(--divine-gold) 5%, var(--forest-emerald) 45%, var(--oceanic-teal) 90%);
-            color: #333;
-            overflow-x: hidden;
-            text-align: center;
-        }
-
-        .sacred-header {
-            text-align: center;
-            padding: 1.5rem 0;
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--moonlight-silver);
-            background: var(--header-gradient);
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        }
-
-        .nav {
-            display: flex;
-            justify-content: center;
-            padding: 1rem;
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(8px);
-            border-radius: 10px;
-            margin: 1rem auto;
-            max-width: 600px;
-        }
-
-        .nav a {
-            text-decoration: none;
-            color: var(--oceanic-teal);
-            font-weight: 600;
-            padding: 0.5rem 1rem;
-            transition: color 0.3s ease;
-        }
-
-        .nav a:hover {
-            color: var(--cosmic-lavender);
-        }
-
-     .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 2rem;
-        }
-
-        .portfolio-grid {
+        .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
+            gap: 1rem;
         }
 
-        .portfolio-item {
+        .grid-2 {
+            grid-template-columns: 2fr 1fr;
+        }
+
+        .grid-3 {
+            grid-template-columns: repeat(3, minmax(0,1fr));
+        }
+
+        .grid-auto {
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        }
+
+        @media (max-width: 900px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
             background: rgba(255,255,255,0.2);
-            backdrop-filter: blur(14px);
+            backdrop-filter: blur(12px);
             border-radius: 18px;
-            padding: 2.5rem;
-            transition: transform 0.3s ease;
+            padding: 1.25rem;
         }
 
-        .portfolio-item:hover {
-            transform: scale(1.07);
+        .muted {
+            opacity: .85;
         }
 
-        .sacred-footer {
-            text-align: center;
-            padding: 2.5rem;
-            background: rgba(255,255,255,0.25);
-            border-radius: 18px;
-            margin-top: 2.5rem;
+        /* Subnav */
+        .subnav {
+            display: flex;
+            gap: .5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 1rem auto 2rem;
+        }
+
+            .subnav a {
+                display: inline-block;
+                padding: .5rem .8rem;
+                border-radius: 999px;
+                text-decoration: none;
+                background: rgba(255,255,255,.6);
+                box-shadow: 0 1px 3px rgba(0,0,0,.08);
+                font-weight: 600;
+            }
+
+        /* Calendar */
+        .calendar {
+            display: grid;
+            gap: .5rem;
+        }
+
+        .cal-head {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            font-weight: 700;
+            opacity: .85;
+        }
+
+        .cal-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: .4rem;
+        }
+
+        .cal-cell {
+            aspect-ratio: 1/1;
+            border-radius: 10px;
+            border: 1px dashed rgba(0,0,0,.15);
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+            padding: .35rem;
+            font-size: .9rem;
+            opacity: .7;
+        }
+
+        /* Goals & status */
+        .chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .35rem;
+        }
+
+        .chip {
+            display: inline-block;
+            padding: .35rem .6rem;
+            border-radius: 999px;
+            background: rgba(0,0,0,.06);
+            font-weight: 600;
+        }
+
+        /* Filters */
+        .filters {
+            display: flex;
+            gap: .5rem;
+            align-items: center;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+        }
+
+            .filters select, .filters input {
+                padding: .45rem .6rem;
+                border-radius: 10px;
+                border: 1px solid rgba(0,0,0,.15);
+                background: rgba(255,255,255,.75);
+            }
+
+        /* Entry skeleton */
+        .entry {
+            border: 1px dashed rgba(0,0,0,.2);
+            border-radius: 16px;
+            padding: 1rem;
+        }
+
+            .entry .row {
+                display: grid;
+                gap: .75rem;
+                grid-template-columns: repeat(3, minmax(0,1fr));
+            }
+
+            .entry .row-2 {
+                grid-template-columns: repeat(2, minmax(0,1fr));
+            }
+
+            .entry label {
+                font-size: .9rem;
+                font-weight: 700;
+                opacity: .8;
+                display: block;
+                margin-bottom: .25rem;
+            }
+
+            .entry .box {
+                min-height: 56px;
+                border-radius: 12px;
+                border: 1px dashed rgba(0,0,0,.18);
+                padding: .6rem;
+                background: rgba(255,255,255,.45);
+            }
+
+            .entry small {
+                opacity: .7;
+            }
+
+        /* Kolb tags */
+        .kolb {
+            display: flex;
+            gap: .5rem;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            font-size: .85rem;
+            font-weight: 700;
+            padding: .25rem .55rem;
+            border-radius: 999px;
+            background: rgba(0,0,0,.06);
         }
     </style>
 </head>
 <body>
-    <div class="sacred-header">Sacred Technology Portfolio</div>
+    <div class="sacred-header">4. semester – Min rejse</div>
+
     <nav class="nav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
+        <a aria-current="page" href="portfolio.html">Portfolio</a>
         <a href="contact.html">Contact</a>
     </nav>
-    <div class="container">
-        <h2>Ideas for Projects</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <h3>Meditation Timer App</h3>
-                <p>A mindful approach to time management</p>
+
+    <!-- TOP: Meaning + Calendar -->
+    <section id="meaning" class="container grid grid-2">
+        <article class="card">
+            <h2>Meaning of this Portfolio</h2>
+            <div class="box" aria-label="meaning-placeholder"></div>
+            <p class="muted">
+                My portfolio is a tool to track my progress toward both general and individual learning goals.  It captures new skills, knowledge, and challenges I have overcome and makes growth visible even when it is not reflected in code or artifacts. <br/><br/>By breaking general goals into small milestones I can celebrate quick wins, stay motivated, and learn from the process. Over time it becomes a library of my competencies that supports internship and job applications.                .
+</p>
+        </article>
+        <aside class="card">
+            <h2>Calendar</h2>
+            <div class="calendar">
+                <div class="cal-head">
+                    <div>Man</div><div>Tir</div><div>Ons</div><div>Tor</div><div>Fre</div><div>Lør</div><div>Søn</div>
+                </div>
+                <div class="cal-grid">
+                    <!-- 6 rækker x 7 kolonner = 42 celler (skeleton) -->
+                    <div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div>
+                    <div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div>
+                    <div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div>
+                    <div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div>
+                    <div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div>
+                    <div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div>
+                </div>
             </div>
-            <div class="portfolio-item">
-                <h3>Spiritual Journal Platform</h3>
-                <p>Digital sacred space for personal reflection</p>
-            </div>
-            <div class="portfolio-item">
-                <h3>Nature Connection API</h3>
-                <p>Connecting users with local nature spots</p>
-            </div>
-            <div class="portfolio-item">
-                <h3>Divine Feminine Dashboard</h3>
-                <p>Moon phase tracking and feminine energy monitoring</p>
-            </div>
-                  <div class="portfolio-item">
-                <h3>Quantum Breathwork Guide</h3>
-                <p>Interactive breath control with real-time biofeedback</p>
+        </aside>
+    </section>
+
+    <!-- OVERALL GOALS + STATUS + CHALLENGES -->
+    <section id="goals" class="container">
+        <div class="card">
+            <h2>Overall Goals · Current Status · Challenges</h2>
+            <div class="grid grid-3">
+                <div>
+                    <h3>Coming soon</h3>
+                    <div class="box" aria-label="overall-goals"></div>
+                </div>
+                <div>
+                    <h3>Live your life <3</h3>
+                    <div class="box" aria-label="current-status"></div>
+                </div>
+                <div>
+                    <h3>Slightly confused on what's going to happen to this portfolio</h3>
+                    <div class="box" aria-label="challenges"></div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- FILTERS / SORT -->
+    <section class="container">
+        <div class="card">
+            <div class="filters">
+                <label for="f-kolb" class="muted">Kolb</label>
+                <select id="f-kolb" name="kolb">
+                    <option>Alle</option>
+                    <option>Doing</option>
+                    <option>Reflecting</option>
+                    <option>Thinking</option>
+                    <option>Planning</option>
+                </select>
+                <label for="f-sort" class="muted">Sortér</label>
+                <select id="f-sort" name="sort">
+                    <option>Nyeste først</option>
+                    <option>Ældste først</option>
+                    <option>Status</option>
+                </select>
+                <input type="search" placeholder="Søg titel/ord…" aria-label="search" />
+            </div>
+        </div>
+    </section>
+
+    <!-- ENTRIES (journal cards) -->
+    <section id="entries" class="container">
+        <h2>Entries</h2>
+        <article class="entry">
+            <div class="row">
+                <div>
+                    <label>Dato</label>
+                    <div class="box" aria-label="dato">12.08.2025</div>
+                </div>
+                <div>
+                    <label>Overskrift</label>
+                    <div class="box" aria-label="overskrift">Første indlæg</div>
+                </div>
+                <div>
+                    <label>Læringsmål (scope for indlæg)</label>
+                    <div class="box" aria-label="laeringsmaal">Tilegne mig viden for udnyttelsen af porteføljen på 4. semester</div>
+                </div>
+            </div>
+
+            <div class="row-2 row" style="margin-top:.75rem;">
+                <div>
+                    <label>Næste mål</label>
+                    <div class="box" aria-label="maal">Strukturere porteføljen bedre</div>
+                </div>
+                <div>
+                    <label>Udfordring</label>
+                    <div class="box" aria-label="udfordring">Min opsætning, hosting... hvilket framework vil jeg gå med?</div>
+                </div>
+            </div>
+
+            <div class="row-2 row" style="margin-top:.75rem;">
+                <div>
+                    <label>Løsningsstrategi</label>
+                    <div class="box" aria-label="loesningsstrategi">Bare prøve at give mig i kast, tjekke andres porteføljer og opsætning.</div>
+                </div>
+                <div>
+                    <label>Progression siden sidst</label>
+                    <div class="box" aria-label="progression"></div>
+                </div>
+            </div>
+
+            <div class="row-2 row" style="margin-top:.75rem;">
+                <div>
+                    <label>Erhvervede færdigheder</label>
+                    <div class="box" aria-label="faerdigheder">Arbejde med ren html/css i visual studio. Gemme lokalt og se en version af siden inden der pushes til github.</div>
+                </div>
+                <div>
+                    <label>Dokumentation (links/artefakter)</label>
+                    <div class="box" aria-label="dokumentation"></div>
+                </div>
+            </div>
+
+            <div style="margin-top:.75rem;">
+                <label>Kolb's læringscirkel</label>
+                <div class="kolb">
+                    <span class="tag">Doing</span>
+                    <span class="tag">Reflecting</span>
+                    <span class="tag">Thinking</span>
+                    <span class="tag">Planning</span>
+                </div>
+                <small class="muted">Brug tags/ikoner eller farver senere – dette er kun skelet.</small>
+            </div>
+        </article>
+
+        <!-- Kopiér denne <article class="entry"> for flere indlæg -->
+    </section>
+
     <div class="sacred-footer">
-        <p>Creating conscious technology with divine purpose 🌸</p>
+        <p>Creating conscious technology with purpose ✨</p>
     </div>
 </body>
 </html>
