@@ -10,6 +10,7 @@
     --header-gradient: linear-gradient(120deg, #8E44AD, #D41D8C);
 }
 
+           
     body {
             margin: 0;
             font-family: 'Orbitron', sans-serif;
@@ -42,6 +43,7 @@
     max-width: 600px;
 }
 
+
 .nav a {
     text-decoration: none;
     color: var(--oceanic-teal);
@@ -72,6 +74,27 @@
     padding: 2rem;
 }
 
+
+
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+    .content-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 .sacred-card {
     background: rgba(255,255,255,0.15);
     backdrop-filter: blur(12px);
@@ -99,6 +122,18 @@
     border-radius: 10px;
 }
 
+.quote {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: var(--oceanic-teal);
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: rgba(255,255,255,0.3);
+    border-radius: 10px;
+    max-width: 800px;
+}
+
 .sacred-footer {
     text-align: center;
     padding: 2rem;
@@ -106,3 +141,4 @@
     border-radius: 15px;
     margin-top: 2rem;
 }
+

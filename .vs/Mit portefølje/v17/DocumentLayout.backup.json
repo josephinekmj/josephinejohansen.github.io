@@ -3,16 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\portfolio.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:portfolio.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\4thsemesterproduct.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:4thsemesterproduct.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\sacredspacestyles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:sacredspacestyles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\about.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:about.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\about.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:about.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\menu.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:menu.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\site-nav.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:site-nav.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\dailyaffirmations.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dailyaffirmations.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\devinfo.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:devinfo.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\android-chrome-192x192.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:android-chrome-192x192.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,27 +63,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "portfolio.html",
-              "DocumentMoniker": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\portfolio.html",
-              "RelativeDocumentMoniker": "portfolio.html",
-              "ToolTip": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\portfolio.html",
-              "RelativeToolTip": "portfolio.html",
-              "ViewState": "AgIAAJUAAAAAAAAAAAAcwLEAAADdAAAAAAAAAA==",
+              "Title": "4thsemesterproduct.html",
+              "DocumentMoniker": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\4thsemesterproduct.html",
+              "RelativeDocumentMoniker": "4thsemesterproduct.html",
+              "ToolTip": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\4thsemesterproduct.html",
+              "RelativeToolTip": "4thsemesterproduct.html",
+              "ViewState": "AgIAADkAAAAAAAAAAAAUwEwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-08-12T12:01:18.911Z",
+              "WhenOpened": "2025-08-21T08:43:28.354Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\index.html",
-              "RelativeDocumentMoniker": "index.html",
-              "ToolTip": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\index.html",
-              "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "devinfo.html",
+              "DocumentMoniker": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\devinfo.html",
+              "RelativeDocumentMoniker": "devinfo.html",
+              "ToolTip": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\devinfo.html",
+              "RelativeToolTip": "devinfo.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-08-12T11:25:46.343Z",
+              "WhenOpened": "2025-08-21T08:35:23.073Z",
               "EditorCaption": ""
             },
             {
@@ -66,10 +94,100 @@
               "RelativeDocumentMoniker": "about.html",
               "ToolTip": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\about.html",
               "RelativeToolTip": "about.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-08-12T11:24:34.677Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "sacredspacestyles.css",
+              "DocumentMoniker": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\sacredspacestyles.css",
+              "RelativeDocumentMoniker": "sacredspacestyles.css",
+              "ToolTip": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\sacredspacestyles.css",
+              "RelativeToolTip": "sacredspacestyles.css",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAGUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-08-13T16:19:45.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\index.html",
+              "RelativeDocumentMoniker": "index.html",
+              "ToolTip": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\index.html",
+              "RelativeToolTip": "index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-08-12T11:25:46.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "contact.html",
+              "DocumentMoniker": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\contact.html",
+              "RelativeDocumentMoniker": "contact.html",
+              "ToolTip": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\contact.html",
+              "RelativeToolTip": "contact.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-08-21T08:17:07.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "dailyaffirmations.html",
+              "DocumentMoniker": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\dailyaffirmations.html",
+              "RelativeDocumentMoniker": "dailyaffirmations.html",
+              "ToolTip": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\dailyaffirmations.html",
+              "RelativeToolTip": "dailyaffirmations.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-08-21T08:14:48.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "menu.js",
+              "DocumentMoniker": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\menu.js",
+              "RelativeDocumentMoniker": "menu.js",
+              "ToolTip": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\menu.js",
+              "RelativeToolTip": "menu.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-08-21T08:10:28.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "site-nav.js",
+              "DocumentMoniker": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\site-nav.js",
+              "RelativeDocumentMoniker": "site-nav.js",
+              "ToolTip": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\site-nav.js",
+              "RelativeToolTip": "site-nav.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-08-21T08:12:26.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "android-chrome-192x192.png - PNG [192x192, 32 bit, PNG]",
+              "DocumentMoniker": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\android-chrome-192x192.png",
+              "RelativeDocumentMoniker": "android-chrome-192x192.png",
+              "ToolTip": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\android-chrome-192x192.png - PNG [192x192, 32 bit, PNG]",
+              "RelativeToolTip": "android-chrome-192x192.png - PNG [192x192, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-08-21T08:23:51.053Z",
+              "EditorCaption": " - PNG [192x192, 32 bit, PNG]"
             },
             {
               "$type": "Bookmark",

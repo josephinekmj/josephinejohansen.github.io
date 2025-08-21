@@ -64,7 +64,7 @@
                 font-weight: 600;
             }
 
-            
+
 
         /* Goals */
         .chips {
@@ -150,26 +150,25 @@
         }
     </style>
 </head>
+<script src="menu.js" defer></script>
+<script src="site-nav.js" defer></script>
+
 <body>
     <div class="sacred-header">4. semester portefølje – Min rejse</div>
 
-    <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a aria-current="page" href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<site-nav></site-nav>
 
     <!-- TOP: Meaning  -->
     <section id="meaning" class="container grid grid-auto">
         <article class="card">
             <h2>Meaning of this Portfolio</h2>
             <div class="box" aria-label="meaning-placeholder"></div>
-            <p class="muted"><small>
-                Min portefølje skal hjælpe mig med at tracke min egen progression ift. både generelle og individuelle læringsmål. Den skal hjælpe mig med at spotte tillærte evner, viden og overvundne udfordringer. Hjælpe med at opretholde min motivation og momentum, ved at berette om den udvikling jeg gennemgår, som ikke er synlig i form af kode, artefakter eller andet. Det kan være med til at styrke min selvtillid i forhold til min egen viden, færdigheder og kompetencer.
-                Ved at se på de generelle læringsmål, håber jeg at nedbryde dem til små individuelle læringsmål, så jeg hele tiden har mulighed for at fejre små sejre undervejs i processen, fremfor blot at opnå det endelig mål ved slut/eksamen. På den måde kan jeg se, hvor meget jeg lærer og hvilke fremskridt jeg gør, samt min evne til at overkomme udfordringer og finde løsninger. På samme tid bliver den et bibliotek over mine evner og fremskridt, som jeg kan benytte til at skabe en portefølje som er mere målrettet cv, for at søge praktikplads og senere job, ved at beskrive opnåede kompetencer og hvad jeg har arbejdet med af teknologier og teorier.
-            </small>
-                </p>
+            <p class="muted">
+                <small>
+                    Min portefølje skal hjælpe mig med at tracke min egen progression ift. både generelle og individuelle læringsmål. Den skal hjælpe mig med at spotte tillærte evner, viden og overvundne udfordringer. Hjælpe med at opretholde min motivation og momentum, ved at berette om den udvikling jeg gennemgår, som ikke er synlig i form af kode, artefakter eller andet. Det kan være med til at styrke min selvtillid i forhold til min egen viden, færdigheder og kompetencer.
+                    Ved at se på de generelle læringsmål, håber jeg at nedbryde dem til små individuelle læringsmål, så jeg hele tiden har mulighed for at fejre små sejre undervejs i processen, fremfor blot at opnå det endelig mål ved slut/eksamen. På den måde kan jeg se, hvor meget jeg lærer og hvilke fremskridt jeg gør, samt min evne til at overkomme udfordringer og finde løsninger. På samme tid bliver den et bibliotek over mine evner og fremskridt, som jeg kan benytte til at skabe en portefølje som er mere målrettet cv, for at søge praktikplads og senere job, ved at beskrive opnåede kompetencer og hvad jeg har arbejdet med af teknologier og teorier.
+                </small>
+            </p>
         </article>
         <article class="card">
             <h2>4. semester speciale-emner</h2>
@@ -179,42 +178,44 @@
             <p class="muted"><small>Jeg regner med at vi skal arbejde med billedgenkendelse. Jeg synes også det vil være spændende at lære, hvordan jeg kan indsamle data, finde mønstre og opdage outliers. Derudover er jeg interesseret i, hvordan jeg kan fusionere emnerne AI/ML og IT-projektledelse & Software Delivery.</small></p>
         </article>
     </section>
-    <br/>
+    <br />
     <!-- OVERALL GOALS -->
     <section id="goals" class="container">
         <div class="card">
-           
-                <div>
-                    <h3>Generelle læringsmål</h3>
-                    <div class="box" aria-label="overall-goals" align="left">
-                        <b>Viden</b><br /><br/>
-                        Den studerende har viden om:<br />
 
-                        <ul> 
-                            <li>De valgte emners teori og praksis</li>
-                            <li>Det/de valgte emners relevans i forhold til it‐faglig teori og praksis</li><br />
-                        </ul>
-                        
-                        
-                        <b>Færdigheder</b><br /><br/>
+            <div>
+                <h3>Generelle læringsmål</h3>
+                <div class="box" aria-label="overall-goals" align="left">
+                    <b>Viden</b><br /><br />
+                    Den studerende har viden om:<br />
 
-                        Den studerende kan:<br />
-                        <ul>
-                            <li>Udvælge, beskrive og foretage litteratursøgning af en selvvalgt it‐faglig problemstilling</li>
-                            <li>Diskutere samfunds- og/eller branchemæssige aspekter knyttet til det/de valgte emner</li>
-                            <li>Vurdere problemstillinger og opstille løsningsmuligheder i forhold til det/de valgte emner</li>
-                            <li>Formidle centrale resultater</li><br />
-                        
-                        </ul>
-                        <b>Kompetencer</b><br /><br/>
+                    <ul>
+                        <li>De valgte emners teori og praksis</li>
+                        <li>Det/de valgte emners relevans i forhold til it‐faglig teori og praksis</li>
+                        <br />
+                    </ul>
 
-                        Den studerende kan:<br />
-                        <ul>
-                            <li>Selvstændigt sætte sig ind i nye emner inden for fagområdets teori og/eller praksis</li>
-                            <li>Perspektivere og relatere det/de valgte emner i forhold til uddannelsens øvrige emneområder</li>
-                        </ul>
-                    </div>
+
+                    <b>Færdigheder</b><br /><br />
+
+                    Den studerende kan:<br />
+                    <ul>
+                        <li>Udvælge, beskrive og foretage litteratursøgning af en selvvalgt it‐faglig problemstilling</li>
+                        <li>Diskutere samfunds- og/eller branchemæssige aspekter knyttet til det/de valgte emner</li>
+                        <li>Vurdere problemstillinger og opstille løsningsmuligheder i forhold til det/de valgte emner</li>
+                        <li>Formidle centrale resultater</li>
+                        <br />
+
+                    </ul>
+                    <b>Kompetencer</b><br /><br />
+
+                    Den studerende kan:<br />
+                    <ul>
+                        <li>Selvstændigt sætte sig ind i nye emner inden for fagområdets teori og/eller praksis</li>
+                        <li>Perspektivere og relatere det/de valgte emner i forhold til uddannelsens øvrige emneområder</li>
+                    </ul>
                 </div>
+            </div>
         </div>
     </section>
 

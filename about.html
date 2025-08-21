@@ -4,123 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me | A Journey of Growth</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-        
-        :root {
-            --divine-gold: #F9E79F;
-            --forest-emerald: #8BC34A;
-            --cosmic-lavender: #D1C4E9;
-            --sunrise-peach: #FFAB91;
-            --oceanic-teal: #26A69A;
-            --moonlight-silver: #ECEFF1;
-            --header-gradient: linear-gradient(120deg, #8E44AD, #D41D8C);
-        }
-
-        body {
-            margin: 0;
-            font-family: 'Orbitron', sans-serif;
-            background: radial-gradient(circle at 50% 50%, var(--divine-gold) 5%, var(--forest-emerald) 45%, var(--oceanic-teal) 90%);
-            color: #333;
-            overflow-x: hidden;
-        }
-
-            .sacred-header {
-            text-align: center;
-            padding: 1.5rem 0;
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--moonlight-silver);
-            background: var(--header-gradient);
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            }
-
-       .nav {
-            display: flex;
-            justify-content: center;
-            padding: 1rem;
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(8px);
-            border-radius: 10px;
-            margin: 1rem auto;
-            max-width: 600px;
-        }
-
-        .nav a {
-            text-decoration: none;
-            color: var(--oceanic-teal);
-            font-weight: 600;
-            padding: 0.5rem 1rem;
-            transition: color 0.3s ease;
-        }
-
-        .nav a:hover {
-            color: var(--cosmic-lavender);
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        .content-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
-            margin-bottom: 3rem;
-        }
-
-        @media (min-width: 768px) {
-            .content-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        .sacred-card {
-            background: rgba(255,255,255,0.15);
-            backdrop-filter: blur(15px);
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .sacred-card:hover {
-            transform: scale(1.03);
-        }
-
-        .quote {
-            font-size: 1.4rem;
-            font-style: italic;
-            color: var(--oceanic-teal);
-            text-align: center;
-            margin: 2rem auto;
-            padding: 1.5rem;
-            background: rgba(255,255,255,0.3);
-            border-radius: 10px;
-            max-width: 800px;
-        }
-
-        .sacred-footer {
-            text-align: center;
-            padding: 2rem;
-            background: rgba(255,255,255,0.2);
-            border-radius: 15px;
-            margin-top: 2rem;
-        }
-    </style>
+    <link rel="stylesheet" href="sacredspacestyles.css">
+    <script src="menu.js" defer></script>
+    <script src="site-nav.js" defer></script>
+ 
 </head>
+
 <body>
     <div class="sacred-header">Welcome!</div>
-    <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    <site-nav></site-nav>
+
     <div class="container">
         <div class="content-grid">
             <div class="sacred-card">
