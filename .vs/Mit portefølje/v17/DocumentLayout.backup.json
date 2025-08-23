@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\portfolio.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:portfolio.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\4thsemesterproduct.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:4thsemesterproduct.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -50,11 +54,28 @@
       "DocumentGroups": [
         {
           "DockedHeight": 172,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "portfolio.html",
+              "DocumentMoniker": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\portfolio.html",
+              "RelativeDocumentMoniker": "portfolio.html",
+              "ToolTip": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\portfolio.html",
+              "RelativeToolTip": "portfolio.html",
+              "ViewState": "AgIAABUBAAAAAAAAAAAUwCcBAAB2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-08-22T11:32:41.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
@@ -62,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "4thsemesterproduct.html",
               "DocumentMoniker": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\4thsemesterproduct.html",
               "RelativeDocumentMoniker": "4thsemesterproduct.html",
@@ -75,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "devinfo.html",
               "DocumentMoniker": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\devinfo.html",
               "RelativeDocumentMoniker": "devinfo.html",
@@ -88,7 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "about.html",
               "DocumentMoniker": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\about.html",
               "RelativeDocumentMoniker": "about.html",
@@ -101,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "sacredspacestyles.css",
               "DocumentMoniker": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\sacredspacestyles.css",
               "RelativeDocumentMoniker": "sacredspacestyles.css",
@@ -114,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\index.html",
               "RelativeDocumentMoniker": "index.html",
@@ -127,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "contact.html",
               "DocumentMoniker": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\contact.html",
               "RelativeDocumentMoniker": "contact.html",
@@ -140,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "dailyaffirmations.html",
               "DocumentMoniker": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\dailyaffirmations.html",
               "RelativeDocumentMoniker": "dailyaffirmations.html",
@@ -153,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "menu.js",
               "DocumentMoniker": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\menu.js",
               "RelativeDocumentMoniker": "menu.js",
@@ -166,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "site-nav.js",
               "DocumentMoniker": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\site-nav.js",
               "RelativeDocumentMoniker": "site-nav.js",
@@ -179,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "android-chrome-192x192.png - PNG [192x192, 32 bit, PNG]",
               "DocumentMoniker": "C:\\Users\\josep\\Desktop\\Mit portef\u00F8lje\\android-chrome-192x192.png",
               "RelativeDocumentMoniker": "android-chrome-192x192.png",
